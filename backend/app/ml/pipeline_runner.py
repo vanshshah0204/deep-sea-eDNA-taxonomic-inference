@@ -27,8 +27,8 @@ RANK_NAMES = [
 ]
 
 _HERE = Path(__file__).resolve().parent
-_REPO_ROOT = _HERE.parent.parent.parent
-_DEMO_PKL = _REPO_ROOT / "model" / "demo_results.pkl"
+_BACKEND_ROOT = _HERE.parent.parent
+_DEMO_PKL = _BACKEND_ROOT / "model" / "demo_results.pkl"
 
 
 def startup() -> None:
