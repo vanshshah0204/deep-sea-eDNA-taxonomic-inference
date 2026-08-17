@@ -28,6 +28,7 @@ app.add_middleware(
 
         # Production Railway frontend
         "https://brave-insight-production-fb75.up.railway.app",
+        "https://abyss-production-b74d.up.railway.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
