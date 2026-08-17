@@ -20,11 +20,14 @@ app = FastAPI(title="eDNA Classification API", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        # Local development
         "http://localhost:3000",
         "http://127.0.0.1:3000",
-        "http://localhost:5173",   # common Vite default
+        "http://localhost:5173",
         "http://127.0.0.1:5173",
-        "http://127.0.0.1:58963",  # whatever port you're actually seeing right now
+
+        # Production Railway frontend
+        "https://brave-insight-production-fb75.up.railway.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
